@@ -1,5 +1,5 @@
 import json
-from .item import Item
+from item import Item
 
 with open("data/inventory.json") as f:
     items: dict = json.load(f)
