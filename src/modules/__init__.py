@@ -1,4 +1,6 @@
 from .item import Item
 from . import itemHandler
-from ...utils.check_int import check_int
-from ...utils.check_float import check_float
+from ...utils import check_int, check_float
+
+print(check_int("123"))
+print(check_int("12dsa"))

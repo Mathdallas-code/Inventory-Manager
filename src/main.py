@@ -159,7 +159,7 @@ while True:
     elif user_input == "3":
         item_name = input("Enter item name: ")
         val_type = input(
-            "Enter name of value to be changed(name, opening_stock, stocks_bought, closing_stock, sales, cost_price, selling_price; quantity): "
+            "Enter name of value to be changed(name, opening_stock, stocks_bought, closing_stock, sales, cost_price, selling_price): "
         ).lower()
         new_val = input("Enter new value: ")
         if val_type not in [
@@ -170,7 +170,6 @@ while True:
             "sales",
             "cost_price",
             "selling_price",
-            "quantity",
         ]:
             print("Error: Name of value is not correct")
             continue
