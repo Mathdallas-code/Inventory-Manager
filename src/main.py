@@ -8,7 +8,7 @@ import tabulate
 
 # My module imports
 from modules.itemHandler import *
-from modules.funcs import *
+from modules.utils.funcs import *
 
 # Setting variables
 inventory = items
