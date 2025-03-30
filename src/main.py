@@ -194,4 +194,4 @@ while True:
         print("Bye!")
         break
 
-print(quit(0))
+quit(0)
