@@ -1,12 +1,12 @@
 import json
-from item import Item
+from modules.item import Item
 
-with open("data/inventory.json") as f:
+with open("Invila/data/inventory.json") as f:
     items: dict = json.load(f)
 
 
 def save_json():
-    with open("data/inventory.json", "w") as f:
+    with open("Invila/data/inventory.json", "w") as f:
         json.dump(items, f, sort_keys=True, indent=4)
         f.close()
 
@@ -48,12 +48,3 @@ def remove_item(item_name: str):
         return "Item deleted!"
     except:
         return "No item exists"
-
-
-if __name__ == '__main__':
-    eggs = Item("eggs", 4.50, 9.00, 55)
-    add_item(eggs)
-    change_val("eggs", "quantity", 100)
-    print(view_items())
-    remove_item("eggs")
-    print(view_items())

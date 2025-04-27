@@ -27,7 +27,7 @@ headers = [
 
 # Used to save the json file with the value of inventory
 def save_json_main():
-    with open("data/inventory.json", "w") as f:
+    with open("Invila/data/inventory.json", "w") as f:
         json.dump(inventory, f, sort_keys=True, indent=4)
         f.close()
 
